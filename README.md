@@ -1,7 +1,7 @@
 # CSS Learning
 
 This repo is for learning **CSS** as the second step of being a **Full-Stack Web Developer**            
-The repo will be added continously by learning, practise files and sometimes will be some css Applications
+The repo will be updated continously by learning, practise files and sometimes will be updated with some CSS Applications
 
 ## Author
 
