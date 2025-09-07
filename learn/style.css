@@ -1,0 +1,58 @@
+/* The following, is a style for all paragraphs in my web page */
+p {
+    color: #00f0cf;
+    font-style: italic;
+    font-size: 50px;
+}
+
+div {
+    background-color: rgb(20, 20, 100);
+    background-image: url(../imgs/img3.png);
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    /* background-attachment: scroll; */
+    background-position: 50% 50%;
+    background-position: center
+}
+
+/* 
+    To call a tag, just write its name
+    To call something using its class, just write '.class-name'
+    To call something using its id   , just write '#id-name'
+*/
+/*                                  Background
+    1. background-color: color can be accessed by 3 methods
+        1. by typing its name e.g., red / green / blue / black / purple
+        2. by **RGB** function: (Red Green Blu) function. Each can take values from 0 to 255
+            e.g., background-color: rbg(255 0 0) => this is the red color. red ratio: 255, green and blue ration: 0
+            e.g., background-color: rbg(0 255 0) => this is the green color. green ratio: 255, red and blue ration: 0
+            e.g., background-color: rbg(0 0 255) => this is the red color. blue ratio: 255, green and red ration: 0
+            e.g., background-color: rgb(200 10 20) => this is in-between color. the domenant color is 'red'
+        3. by color Hex code. 00 => 0, FF/ff => 255
+            e.g., background-color: #FF0000. red ration: 255 == FF, green and blue ration: 0 == 00
+            e.g., background-color: #CF0030. red ration: hex(FF), green ration: hex(00), blue ratio: hex(30)
+    2. background-image: we can add image to the background
+        e.g., background-image: url(../imgs/myimg.png)
+    3. background-repeat: we can repeat the background-image in 4 different ways
+        1. background-repeat: repeat    => this repeats the image in the 2 directions
+        2. background-repeat: repeat-x  => this repeats the image in the x direction
+        3. background-repeat: repeat-y  => this repeats the image in the y direction
+        4. background-repeat: no-repeat => this doesn't repeat the image at all, just put it once.
+        Note: If it's not included, the default will be applied
+        Note: The default is 'repeat', repeat it in the 2 directions
+    4. background-attachment: it can take many values but the critical values are just 2 values
+        1. background-attachment: fixed => this make the image fixed in the screen even if you scroll down
+        2. background-attachment: scroll=> this make the image scroll. once you scroll down, it disappears
+    5. background-position: it takes 2 arguments. if the second argument is missing, it's considered 'center'
+        The page is formed with 3 rows and 3 columns
+        It means that the page is divided into 9 sections e.g., 
+            left top        center top      right top
+            left center     center center   right center
+            left bottom     center bottom   right bottom
+        We can access it into 2 ways
+            1. by typing the position e.g., left right
+            2. by the px and % e.g., 
+                - 40px 0px: move it 40px from left and 0px from top
+                - 30px 50%: move it 30px from left and 50% from top
+    6. background-size: 
+*/
