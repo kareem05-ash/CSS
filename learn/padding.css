@@ -1,0 +1,59 @@
+div {
+    padding: 10px 20px;
+    /* top: 10, right: 20, bottom: 10, left: 20 */
+    font-size: 300px;
+    width: 80%;
+    margin: auto;
+}
+
+h2 {
+    font-style: italic;
+    color: #0000ff;
+    font-size: larger;
+}
+
+p {
+    font-size: 100px;
+    color: rgb(255, 69, 255);
+    padding: 10px 20px;
+    width: 80%;
+    height: 90%;
+    margin: auto;
+}
+
+/*  Padding
+    - There are 4 indecies can have padding: 
+        1. top
+        2. right
+        3. bottom
+        4. left
+    - Padding can't take negative values
+    - we can access each by padding-itsname: 
+        1. for top      index: padding-top      : e.g., padding-top     : 10px;
+        2. for right    index: padding-right    : e.g., padding-right   : 20px;
+        3. for bottom   index: padding-bottom   : e.g., padding-bottom  : 10px;
+        4. for left     index: padding-left     : e.g., padding-left    : 20px;
+    - we can access all of them in a single line of code by padding: top right bottom left;
+        e.g., padding: 10px 20px 10px 20px;
+    - if we write just one padding size, the reset indecies will be with the same size
+        e.g., padding: 10px;    all paddings(top, right, bottom, left) will be 10px
+    - if we write just two padding sizes, the reset indecies will be as the oposote padding index
+        - the oposite for 'top' index is 'bottom' index
+        - the oposite for 'right' index is 'left' index
+        e.g., padding: 10px 23px;           top: 10, right: 23, then bottom: 10, left: 23
+        e.g., padding: 10px 25px 20px;      top: 10, right: 25, bottom: 20, then left: 25
+        e.g., padding: 0 20px;              top: 0 , right: 20, then bottom: 0 , left: 20
+*/
+
+/*  Margin
+    - There are the same 4 indecies in padding
+    - we can access them as same as in padding
+    - Margin can take negative values
+    - we can set margin: auto;.
+        - it centerlize the block
+        - if width 80% & margin: auto, the right and left margins will be 10% each to centerlize the block
+*/
+
+/*  Border
+
+*/
