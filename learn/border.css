@@ -1,0 +1,19 @@
+div {
+    font-size: 100px;
+    color: blue;
+    padding: 10px;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    border-width: 30px;
+    border-style: solid;
+    border-color: blueviolet;
+}
+
+p {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    padding: 10px;
+    display: inline;
+}
