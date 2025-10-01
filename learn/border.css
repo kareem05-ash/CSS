@@ -1,19 +1,72 @@
+/* 
+    Kareem Ashraf Mostafa
+    Junior Electronics & Communication Engineering Student @ Cairo University
+    kareem.ash05@gmail.com
+    +201002321067 / +201154398353
+    Acadimic Track: Digital IC Design & Verification
+    Programming Track: Full-Stack Web Development
+*/
+
 div {
-    font-size: 100px;
-    color: blue;
+    background-color: #eee;
     padding: 10px;
-    width: 80%;
-    height: 80%;
-    margin: auto;
-    border-width: 30px;
-    border-style: solid;
-    border-color: blueviolet;
+    border: solid blue 10px;
+    margin: 5px 10px
 }
 
-p {
-    width: 80%;
-    height: 80%;
-    margin: auto;
-    padding: 10px;
-    display: inline;
+.first {
+    /* display: none; */
+    visibility: hidden;
 }
+
+
+/*      Boarder
+    boarder-width   -> can configure boarder width as you want
+    boarder-color   -> can configure boarder color as you want
+    boarder-style   -> can configure boarder style as you want
+    
+    NTOE you can give your boarder 4 different values (for top, right, bottom, left indecies) for each attribute( width, color, style) 
+        e.g., boarder-width 10px 20px 15px 25px 
+    NOTE we can also configure all this attributes in a single line of code as:
+        e.g., boarder: solid 20px, green
+*/
+
+/*      Outline
+    outline isn't considered as a part of the element
+    as we increase the outline width, element width doesn't increase too
+    e.g., outline: 10px solid red;
+            this makes outline with width 10px, solid style, and red color
+*/
+
+/*      ***** Display *****
+    1. Block -> display: block
+        - Takes full width if no width is given
+        - Adds line break at its end
+        - Respect padding, margin, width, height
+
+    2. Inline -> display: inline
+        - Doesn't respect width, height
+        - Respect (left, right) padding & margin only
+        - Doesn't add line break at its end
+        - Allows elements before and after it
+
+    3. Inline-Block -> display: inline-block
+        - Allows elements before and after it
+        - Respect padding, margin, width, height
+        - Doesn't add line break at its end
+        NOTE ->> it takes Block and Inline advantages (doesn't add line break, respect all arguments)
+
+    4. None -> display: none
+        - Removes your element from the page
+        - Its place isn't reserved (the following item takes its place
+*/
+
+/*      ****** Visibility ******
+    1. Visible -> visibility: visible
+        - does nothing. just keep your item in the web page
+    
+    2. Hidden -> visibility: hidden
+        - just hides your item from the web page
+        - reserves its place (the following item doesn't take its place)
+        - its place is kept empty
+*/
