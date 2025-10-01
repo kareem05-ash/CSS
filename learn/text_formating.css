@@ -1,0 +1,98 @@
+/* div {
+    background-color: #9f9f99;
+    padding: 10px;
+    color: blue;
+    width: fit-content;
+    margin: 10px auto;
+    border: solid 10px blueviolet;
+    text-shadow: 1px 0 1px rgb(255, 0, 0, 80%)
+} */
+/* 
+
+div {
+    background-color: #eee;
+    padding: 10px;
+    margin: 10px auto;
+    text-align: center;
+    vertical-align: top
+} */
+
+div {
+    background-color: #eee;
+    padding: 10px;
+    margin: auto;
+    /* direction: rtl; */
+    text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+
+.contact-me {
+    display: inline-block;
+    background-color: blueviolet;
+    color: #eee;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 10px;
+}
+
+
+/* Text Color
+    - background-color: red;    // This colors your item background
+    - color: blue;              // This colors the text in your item
+*/
+
+/* Text Shadow
+    - text-shadow: H-shadow V-shadow Blur Color
+        - H-shadow  -> Horizontal shadow shift rate    
+        - V-Hshadow -> Vertical shadow shift rate   
+        - Blur      -> Blur rate
+        - Color     -> Shadow color0  
+*/
+
+/* text-align   -> for horizontal allignment
+    - text-align: right
+    - text-align: left
+    - text-align: center
+*/
+
+/* vertical-align   -> for vertical allignment
+    - vertical-align: top
+    - vertical-align: bottom
+    - vertical-align: center
+*/
+
+/* Text Direction    -> in case of converting English default to Arabic
+    - direction: ltr;       // left to right (for English)
+    - direction: rtl;       // left to right (for Arabic)
+*/
+
+/* Text Decoration 
+    - text-decoration: underline;       // adds line under the text
+    - text-decoration: overline;        // adds line over the text
+    - text-decoration: line-through;    // adds line through the text
+*/
+
+/* Text Transform
+    - text-transform: capitalize;       // capitalizes the first letter of each word in your text
+    - text-transform: uppercase;        // transform each character in your text to uppercase letter
+    - text-transform: lowercase;        // transform each character in your text to lowercase letter
+*/
+
+/* Text Spacing
+    - Letter Spacing    -> letter-spacing: 1px;     // spacing between each letter in your text
+    - Indentation       -> text-indent: 4px;        // text indentation
+    - Line Height       -> line-height: 1.6;        // line spacing (typical value is 1.6 (160%)
+    - Word Spacing      -> word-spacing: 2px;       // spacing between each word in your text
+    - Word Breaking     -> 
+        = word-break: normal;                       // wrapping text
+        = word-break: break-all;                    // break all word (the word can't be divided in two parts [part in line and the other in another line])
+        = word-break: break-word;                   // break the word
+*/
+
+/* Text Overflow
+    - white-space: nowrap;                          // text goes out of your item (just keeping it no wrap)
+    - overflow: hidden;                             // hides the overflow text
+    - text-overflow: ellipsis;                      // puts '...' after the text to tell the user that the text has been clipped (keeping the dimensions of your item is valid)
+*/
