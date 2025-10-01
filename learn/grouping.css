@@ -1,0 +1,108 @@
+/* .one,
+.two,
+.three,
+.four,
+p {
+    display: inline-block;
+    background-color: #eee;
+    color: red;
+    padding: 10px;
+    margin: 5px;
+    border: solid green 10px;
+    font-size: larger;
+    font-family: sans-serif;
+    min-width: 180px;
+    max-width: 200px;
+    min-height: 20px;
+    max-height: 40px;
+} */
+
+/* 
+.one {
+    color: blue;
+    border-bottom: solid 5px blue;
+}
+
+.two {
+    color: yellow;
+    border-bottom: solid 5px yellow;
+}
+
+.three {
+    color: purple;
+    border-bottom: solid 5px purple;
+}
+
+.four {
+    color: gold;
+    border-bottom: solid 5px gold;
+}
+
+p {
+    color: blue;
+    border: dotted 5px blueviolet;
+}
+ */
+div {
+    background-color: #eee;
+    color: black;
+    margin: 10px auto;
+    width: 150px;
+    height: 150px;
+    overflow: auto;
+}
+
+
+/* Grouping
+    - We can add configurations for many elements at a time as: 
+        - .first-class, .second-class, p, div, span, .third-class, #first-id, .and-so-on {
+            your configuration is here
+        }
+*/
+
+/* Nesting 
+    - We can access a specific title in a specific div-class or something by nesting
+        e.g., 
+            index.html/body
+                <h1>Title outside our div<h1>
+                <div class="my-div">
+                    <h1>Title inside our div</h1>
+                    <p>Paragraph inside our div</p>
+                </div>
+                <p>Paragraph outside our div</p>
+            style.css
+                .my-div h1, .my-div p{
+                    color = blue;
+                }
+
+                p, h1{
+                    color = red;
+                }
+    - The previous example shows an application on nesting by:
+        - make all h1, p items inside div with class="my-div" colored with blue
+        - make all h1, p items outside div with class="my-div" colored with red
+*/
+
+/* Dimensions
+    - width: 100px;         // ensures that your item width is 100px (whatever happens)
+    - min-width: 20px;      // ensures that your inline-block item width won't be less than 20px (if item contents is less than 20px)
+    - max-width: 400px;     // ensures that your inline-block item width won't be more than 200px (if item contents is more than 200px)
+    - height:               // The same as in width
+    - min-height:           // The same as in width
+    - max-height:           // The same as in width 
+    - NOTE: we can use 'fit-content' to make dimension auto detected by the item content length
+        e.g., wdith: fit-content;
+*/
+
+/* Overflow
+    - If the content of any item exceeds item's dimensions, the other content will overflow
+    - We can handle this issue by some CSS tags (overflow, overflow-x, overflow-y)
+        - overflow      -> controls all overflow (horizontal and vertical overflow)
+        - overflow-x    -> controls horizontal overflow only
+        - overflow-y    -> controls vertical overflow only
+    - We can control any overflow by some tags (visible, hidden, scrol, auto)
+        - visible       -> It's the default tag. Makes the overflow content visible
+        - hidden        -> It hides the overflow content
+        - scrol         -> If there is overflow content, it will make you scrol it without getting out of item dimensions
+        - auto          -> It's the best choise. It makes you scrol the overflow content and doesn't present scrol tools if there is no overflow content
+*/
