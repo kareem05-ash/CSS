@@ -1,0 +1,78 @@
+.parent {
+    background-color: #eee;
+    font-size: larger;
+    font-family: "Cairo", sans-serif;
+    padding: 20px;
+    margin: auto;
+    border: 5px solid blueviolet;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.child1,
+.child2 {
+    border: inherit;
+    border-radius: inherit;
+    width: fit-content;
+    height: fit-content;
+    margin: 1rem auto;
+}
+
+h1 {
+    background-color: #eee;
+    color: black;
+    border: 0.5rem solid black;
+    border-radius: 2rem;
+    width: fit-content;
+    margin: auto;
+    font-family: "Cairo", sans-serif;
+    font-variant: s
+}
+
+
+
+/* Inheritance
+    Syntax:: e.g., .parent .child {margin: inherit;}    // This sets margin with for .child with same margin was set .parent
+*/
+
+/* Font Family
+    e.g., font-family: "Cairo", sans-serif;             // this is an external font family
+        NOTE: We need to import font family from google using its links in index.html file first
+*/
+
+/* CSS Units
+    ** NOTE:: Default font-size (if not specified) is 16px
+    - px => basic unit
+    - em => represents multiples of parent font-size. 
+        = e.g., div {font-size: 20px} div p {font-size: 0.5em}
+            * This means that font-size for p contens is 20px * 0.5 = 10px
+    - rem => represents multiples of root font-size (index.html font-size if specified)
+        = e.g., Incase of font-size in index.html wasn't set
+            * div{ font-size: 2rem}
+                ** div content font-size will be 2 * 16px (default font size) = 32px
+    - Percentage => represents the percentage fo parent font size
+        = e.g., div{font-size: 20px} div p{font-size: 50%}
+            * paragraph content font size is 50% of 20px = 10px
+    - vw => (View Port Width) represents the percentage of total web page width 
+        = e.g., If web page width was 500px
+            div {font-size: 10vw}
+                * div content font-size will be 10% of 500px = 50px
+    - vh => (View Port Height) represents the percentage of total web page height
+        = e.g., If web page height was 400px
+            div {font-size: 15vh}
+                * div content font-size will be 15% of 400px = 60px
+*/
+
+/* Read
+    - vmin => 
+*/
+
+/* Font Style, Variant, Weight
+    - e.g., font-style: italic;         // If you want to make the content written in italic form
+    - e.g., font-variant: small-caps;   // Transform your text to uppercase with smaller font-size
+    - e.g., font-weight: bold;          // If you want to make the content written in bold form
+    ** NOTE:: To reset any one of them, just make it normal:
+        = font-style: normal;
+        = font-variant: normal;
+        = font-weight: normal;
+*/
