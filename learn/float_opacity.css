@@ -1,0 +1,56 @@
+/* div {
+    cursor: pointer;
+} */
+
+.parent {
+    background-color: rgb(0, 0, 0);
+    padding: 10px 0;
+    border-radius: 1rem;
+}
+
+.parent div {
+    padding: 10px 0;
+    text-align: center;
+    background-color: #ff0000;
+    width: calc((100% - 50px) / 4);
+    margin-left: 10px;
+    float: left;
+    border-radius: inherit;
+}
+
+.clear {
+    clear: both;
+}
+
+.one {
+    opacity: 0.6;
+}
+
+
+
+/* Mouse Cursor
+    e.g., cursor: pointer;          // for clicable content
+    e.g., cursor: move;             // for movable content
+    e.g., and so on
+*/
+
+/* Float & Clear
+    - float: left;                  // floats your items from the left to the right
+    - float: right;                 // floats your items from the right to the left
+    - clear: right;                 // resets the layout if there is floating to the right
+    - clear: left;                  // resets the layout if there is floating to the left
+    - clear: both;                  // resets the layout if there is floating to the right or the left
+    * NOTE -> We've to add .clear element after your floating elements to reset layout 
+        = e.g., add this element after your floating element: <p class="clear"><p/>
+                then in css file: .clear {clear: both}  // this resets the layout 
+*/
+
+/* Calc() Method
+    - calc() can take any css units.    e.g., calc((100% - 40px) / 3)
+*/
+
+/* Opacity
+    - background-color: rgb(23, 32, 23 / 0.4);      // It decreases the contrust of the color only by 40% 
+    - opacity: 1;       // It does nothing (means 100% contrust)
+    - opacity: 0.5;     // It decreases contrust of the background color and the content by 50% 
+*/
