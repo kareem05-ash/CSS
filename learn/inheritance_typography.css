@@ -76,3 +76,19 @@ h1 {
         = font-variant: normal;
         = font-weight: normal;
 */
+
+
+/* Units Comparison - What & when to be used?
+    - rem   => 1rem represents 100% of html tag (typical value if it hadn't benn changed equals 16px)
+    - em    => 1em  represents 100% of element font-size (if not declared, it inherits it from parent font-size
+                * e.g., .parent {font-size: 20px} .child {font-size: 18px; padding: 0.5em}
+                        // now, padding size for child element will be 0.5 * 18px = 9px
+                * e.g., .parent (font-size: 14px} .child {padding: 1em}
+                        // now, padding size for child element will be 1 * 14 = 14px
+    - %     => represents the percentage of parent's corresponding dimension
+                * e.g., html {padding: 16px} .parent {padding: 1.5rem} .child {padding: 50%}
+                        // it means that padding size for parent element is 1.5 * 16px = 24px
+                        // it means that padding size for child  element is 50% * 1.5rem = 50% * 24px = 12px
+    - vw    => 1vw represents 1% of viewport width. e.g., div {width: 80vm}     // it means that div width will be 80% of total page width
+    - vh    => 1vh represents 1% of viewport height.e.g., navbar {height: 100vh}    // it means that navbar height will be 100% of total page height
+*/
