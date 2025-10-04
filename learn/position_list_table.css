@@ -1,0 +1,129 @@
+/* div {
+    background-color: #eee;
+    position: relative;
+    margin: 1rem auto;
+    max-width: 50%;
+    padding: 1rem;
+    border: solid 5px black;
+    border-radius: 0.5rem;
+}
+
+.one,
+.two,
+.three {
+    width: fit-content;
+    min-width: 50px;
+    margin: 0.5em auto;
+    padding: 0.5em;
+    position: absolute;
+}
+
+.one {
+    background-color: red;
+    z-index: 300;
+    left: 15px;
+    top: 15px;
+}
+
+.two {
+    background-color: green;
+    z-index: 400;
+    left: 10px;
+    top: 10px;
+}
+
+.three {
+    background-color: blue;
+    z-index: 500;
+    left: 5px;
+    top: 5px;
+} */
+
+/* body {
+    font-family: "Cairo", sans-serif;
+}
+
+h2 {
+    background-color: #eee;
+    padding: 0.2rem;
+    border: solid 2px black;
+    border-radius: 0.5rem;
+    margin: 0 auto;
+    width: fit-content;
+} */
+
+/* ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+} */
+
+/* ul {
+    list-style: disc inside;
+    border: solid 3px red;
+    border-radius: 5px;
+    padding-left: 1rem;
+}
+
+ul ul {
+    border: none;
+    border-radius: 0;
+    padding-left: 1rem;
+    list-style: square inside;
+}
+
+ */
+
+body {
+    font-family: "Cairo", sans-serif;
+}
+
+table {
+    width: 100%;
+    border-spacing: 5px;
+}
+
+table td {
+    background-color: #eee;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+table thead td {
+    background-color: rgb(190, 153, 226);
+    text-align: center;
+    font-weight: bolder;
+}
+
+
+
+
+/* Position
+   - position: static;         // Default position (it's redunduant). 
+       = NOTE -> if we customize any index (top: 100px) it doesn't affect on element position
+   - position: relative;       // The element position is relative to the normal position of the element without position changing
+       = NOTE -> if we customize any index (top: 100px) it changes element position by moving it 100px to the bottom making 100px top space from its normal position
+   - position: absolute;       // The element position is relative to the nears container with non-static position
+       = e.g., .grnd-parent {position: relative} .parent {position: static} .child {position: absolute; top: 10px}
+           * Now, child won't occupy any space from the page just floating in the page over content and will be 10px down the top limit op .grand-parent container
+               # child position isnt' relative to parent container as parent's position is static then we look for higher container with non-static position which is grand-parent in this case
+           * NOTE -> If there is no any non-static positioned container, the element position will be relative to the view port (body container)
+   - position: fixed;          // The element is remoevd from the normal document flow (as in absolute case). 
+       = NOTE -> It's always positioned relative to the view port
+       = It's used to make your element is always in the page even if you scrol down
+       = e.g., .navbar {
+           position: fixed;
+           top: 0;
+           left: 0;
+           width: 100%}
+   - position: sticky;         // It's just like relative until it reaches to top index 0. Then, it toggles to fixed position
+/
+
+/* Z-Index
+    - controls which comes over which
+    - The item with biggest z-index will be over any item
+    - If there are two or more items with the same z-index, they will be displayed in html order
+        = the last defined element will cover the one before it
+*/
+
+/* Table */
