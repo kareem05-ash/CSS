@@ -1,0 +1,121 @@
+/* Pseudo Classes & Pseudo Elements */
+
+/* .one {
+    background-color: rgb(144, 144, 144);
+    color: white;
+}
+
+.two {
+    background-color: #eee;
+    width: 100px;
+    height: 100px;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+a:visited {
+    color: blueviolet;
+}
+
+.ch:checked+label {
+    display: none;
+}
+
+label {
+    color: burlywood;
+} */
+
+body {
+    font-family: "Cairo", sans-serif;
+}
+
+.parent {
+    margin-bottom: 20px;
+    overflow: hidden;
+    counter-increment: mem-count;
+}
+
+.user {
+    background-color: #eee;
+    width: 50px;
+    margin-right: 20px;
+    padding: 10px;
+    height: 55.5px;
+    float: left;
+    font-size: 50px;
+    text-align: center;
+    height: 100%;
+}
+
+.one {
+    background-color: #eee;
+    padding: 10px;
+    width: 600px;
+    float: left;
+    position: relative;
+    height: 100%;
+}
+
+.one::after {
+    content: counter(mem-count);
+    position: absolute;
+    background: blue;
+    color: white;
+    width: 20px;
+    text-align: center;
+    right: -10px;
+    top: 50%;
+    margin-top: -10px;
+    font-weight: bolder;
+    border-radius: 2px;
+}
+
+.one::before {
+    content: "";
+    width: 0;
+    height: 0;
+    background-color: white;
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    margin-top: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #009688 transparent transparent;
+}
+
+/* .one {
+    display: inline-block;
+    background-color: #eee;
+} */
+
+
+/* Pseudo Classes
+    - :hover     -> The state when the cursor is on your element
+    - :checked   -> The state for input-type="checkbock" in case of it's checked
+    - :visited   -> The state for visited links
+    - :empty     -> An element without children
+    - :focus     -> For form input fields in case of focusing on the field
+*/
+
+/* Pseudo Elements
+    - ::first-letter    -> To customize the first letter in your element
+    - ::first-line      -> To customize the first line in your element
+    - ::selection       -> To customize your elment in case of it's selected with the cursor
+    - ::before          -> To generate an imaginary element before your normal element
+    - ::after           -> To generate an imaginary element after your normal element
+    - counter-increment: my-counter -> This has to be in .parent item
+        = In child item::after {content: counter(my-counter)}
+            * Now, we have a counter element after each child item counts all child items
+    
+    - .my-class::before {content: attr(my-attribute)}   
+        = Here, we can access any attribute in HTML for .my-class element 
+            considering that this attribute is a Pseudo Element
+*/
