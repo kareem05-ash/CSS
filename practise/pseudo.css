@@ -1,0 +1,109 @@
+/* body {
+    font-family: "Cairo", sans-serif;
+} */
+
+/* Assignment 1 */
+/* div {
+    width: 300px;
+    text-align: center;
+    background-color: #eee;
+    margin: 10px auto;
+    padding-top: 30px;
+    height: 60px;
+}
+
+div:empty {
+    background-color: red;
+} */
+/* Assignment 2 */
+/* 
+div {
+    background-color: #c1bfbf;
+    padding: 20px 40px;
+    position: relative;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    overflow: visible;
+
+}
+
+span {
+    background-color: red;
+    position: absolute;
+    color: white;
+    padding: 10px;
+    left: -10px;
+    margin-top: -10px; 
+} */
+
+/* Assignemnt 3 */
+/* 
+p {
+    padding: 10px 20px;
+    text-transform: capitalize;
+    background-color: #eee;
+    width: 60%;
+    border-left: solid 5px #ff0f7f;
+    position: relative;
+    margin: 0 auto 10px;
+}
+
+p::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent #ff0f7f transparent transparent;
+    border-width: 10px;
+    position: absolute;
+    left: -25px;
+    top: 50%;
+    margin-top: -10px;
+}
+
+p::after {
+    content: attr(data-person);
+    background-color: #d3d2d2;
+    position: absolute;
+    left: -100px;
+    padding: 5px;
+    width: 60px;
+    text-align: center;
+    top: 5px;
+} */
+
+/* Assignment 4 */
+
+/* body {
+    counter-increment: products-count;
+}
+
+p {
+    background-color: #eee;
+    width: 60%;
+    padding: 10px;
+    text-transform: capitalize;
+    position: relative;
+    margin: 10px auto;
+}
+
+p::before {
+    content: counter(products-count);
+    padding: inherit;
+    background-color: #be3300;
+    columns: white;
+    position: absolute;
+    left: -30px;
+    top: 0;
+}
+
+p::after {
+    content: "";
+    height: 100%;
+    width: 5px;
+    background-color: #be3300;
+    position: absolute;
+    right: -5px;
+    top: 0;
+} */
