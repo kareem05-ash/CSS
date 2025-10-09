@@ -1,0 +1,126 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Cairo", sans-serif;
+}
+
+/* div {
+    counter-increment: name;
+    display: inline-block;
+    background-color: #eee;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: solid 2px black;
+    box-shadow: 5px 5px 0 0 #0b91ff, -5px -5px 0 0 #ff4b75;
+    margin-left: calc((100% - 312px) / 4);
+    margin-top: 20px;
+    text-align: center;
+    padding: 30px 0;
+    position: relative;
+}
+
+div::before {
+    content: counter(name);
+    background-color: black;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    margin-left: -15px;
+    top: -15px;
+} */
+
+/* 
+div {
+    background-color: #eee;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 10px 0 #767070 inset;
+    border-top-left-radius: 10px 5px;
+    border-bottom-right-radius: 10px 5px;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    margin: 40% auto;
+} */
+
+
+.parent {
+    width: 550px;
+    height: fit-content;
+    margin: auto;
+    padding: 0 90px;
+}
+
+.parent div {
+    display: inline-block;
+    background-color: rgb(237, 237, 237);
+    padding: 10px;
+    border-radius: 0.5rem;
+    width: calc((100% - 44px) / 2);
+    position: relative;
+}
+
+.basic {
+    margin-right: 20px;
+}
+
+.pro {
+    margin-left: 20px;
+}
+
+.title {
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(0, 180, 250);
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 0.5rem;
+    color: white;
+}
+
+.price {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    padding: 35px 0;
+    background-color: rgb(220, 220, 220);
+    border-radius: 50%;
+    margin: auto;
+}
+
+.price,
+.title {
+    font-weight: bolder;
+    text-align: center;
+}
+
+.parent .basic::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    right: -23px;
+    top: 0;
+    z-index: 100;
+    background-color: rgb(0, 180, 250);
+}
+
+.parent .pro::before {
+    content: "Or";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgb(0, 180, 250);
+    left: 0;
+    top: 50%;
+    margin-top: -15px;
+    margin-left: -36px;
+    z-index: 200;
+    color: white;
+}
