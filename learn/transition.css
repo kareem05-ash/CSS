@@ -1,0 +1,65 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.one {
+    background-color: #eee;
+    width: 200px;
+    height: 200px;
+    transition-duration: 1s;
+    transition-delay: 0.3s;
+    transition-property: margin, padding, height, border-radius, text-align;
+    transition-timing-function: ease;
+}
+
+.one:hover {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+
+/* Transition
+    - transition-duaration  -> The time to finish the transition
+        = e.g., transition-duaration: 1s;   // The transition will be done after 1 second
+    - transition-delay      -> The delay before applying your transition
+        = e.g., transition-delay: 0.5s;     // The transition will begin after 0.5 second
+    - transition-property   -> The properties to be included in the transition
+        = e.g., transition-property: all;   // All properties will be included in the transition process
+        = e.g., transition-property: margin, padding, width;    // margin, padding, and width only will be included int the transition process
+    - transition-timing-function    -> Transition time configuration
+        = e.g., transition-timing-function: ease;       // Transition starts slowely then fastly and ends slowely
+        = e.g., transition-timing-function: linear;     // Transition acceleration = 0
+        = e.g., transition-timing-function: ease-in;    // Transition starts slowely then fastly
+        = e.g., transition-timing-function: ease-out;   // Transition starts fastly and ends slowely
+        = e.g., transition-timing-function: ease-in-out;// Transition starts slowely then normal and ends slowely
+    
+    NOTE:: We can short all these steps by transition:
+        = e.g., transition: all 2s 0.5 linear/          // all properties will be included, duration = 2s, delay = 0.5, and zero acceleration
+        = e.g., transition: width 1s, height 2s 0.3 linear;
+            // for width: duration = 1s, delay = 0, ease
+            // for height: duration = 2s, delay = 0.3, linear
+*/
+
+/* Important Declaration
+    - background-color: #eee !important;    // This line overides any background color for this item from anywhere
+                                            // Item background color will be #eee 100%
+*/
+
+/* Margin Collapsing
+    - Only vertical margin collapses
+    - Bigger margin wins
+    - Nesting doesn't prevent collapsing
+*/
+
+/* CSS Variables
+    - Variable name has to begin with '--'
+    - Variable name is case sensitive
+    - We use var() to use this variable
+    - var() takes 2 arguments: var(--variableName, Fallback Value)
+        = --variableName: your variable name
+        = Fallback Value: the second option if your variable isn't accessable or something else
+*/
