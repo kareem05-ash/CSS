@@ -1,0 +1,273 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Assignment 1 */
+/* div {
+    background-color: #eee;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    color: orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    margin: auto;
+    box-shadow: 5px 0 0 0 orangered, -5px 0 0 0 #0af;
+} */
+
+/* Assignment 2 */
+
+/* .parent {
+    background-color: #eee;
+    display: flex;
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    padding: 10px;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.parent div {
+    background-color: #ff4500;
+    width: calc(94% / 3);
+    height: fit-content;
+    padding: 0.4em;
+    border-radius: 0.5em;
+    display: flex;
+    justify-content: center;
+} */
+
+/* Assignment 3 */
+/* 
+.parent {
+    background-color: #eee;
+    width: 600px;
+    height: 300px;
+    padding: 10px;
+    border-radius: 0.5rem;
+    margin: auto;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+
+.parent div {
+    background-color: #507090;
+    width: calc(94% / 3);
+    padding: 0.4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.one {
+    order: 6;
+    align-self: flex-end;
+    height: fit-content;
+}
+
+.two {
+    order: 5;
+}
+
+.three {
+    order: 2;
+    height: fit-content;
+    align-self: flex-start;
+}
+
+.four {
+    order: 3;
+}
+
+.five {
+    order: 4;
+}
+
+.six {
+    order: 1;
+} */
+
+/* Assignment 4 */
+/* .parent {
+    background-color: #eee;
+    width: 600px;
+    height: 300px;
+    padding: 0.5rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.parent div {
+    background-color: #257e7b;
+    color: white;
+    height: calc(94% / 3);
+}
+
+.one,
+.three {
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.two {
+    width: 50%;
+} */
+
+
+/* Assignment 5 */
+
+/* .parent {
+    background-color: #eee;
+    width: 600px;
+    height: 300px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.parent div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: calc(60% / 4);
+    height: 50%;
+}
+
+.one {
+    background-color: orangered;
+    order: 2;
+}
+
+.two {
+    background-color: green;
+    order: 3;
+    align-self: flex-end;
+}
+
+.three {
+    background-color: brown;
+    order: 4;
+}
+
+.four {
+    background-color: blueviolet;
+    order: 1;
+    align-self: flex-end;
+} */
+
+/* Assignment 6 */
+
+:root {
+    --space: 0.5rem;
+    --block-color: #c3c3c3;
+    --border-radius: 0.2rem;
+    --font-size: 0.8rem;
+}
+
+.page {
+    font-size: var(--font-size);
+    background-color: #eee;
+    width: 100%;
+    height: 400px;
+    padding: var(--space);
+    border-radius: var(--border-radius);
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+header,
+main,
+footer {
+    border-radius: var(--border-radius);
+    display: flex;
+}
+
+header ul,
+header ul li,
+header div,
+main div,
+footer div {
+    display: inline-block;
+    background-color: var(--block-color);
+}
+
+header,
+footer {
+    flex-grow: 0.5;
+}
+
+header .logo {
+    display: flex;
+    padding: inherit;
+    justify-content: center;
+    flex-grow: 1;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    padding: inherit;
+    justify-content: flex-end;
+    margin-left: var(--space);
+    list-style: none;
+    flex-grow: 8;
+    align-items: center;
+}
+
+header ul li {
+    padding: 0 0.5em;
+}
+
+main {
+    flex-grow: 8;
+    margin: var(--space) 0;
+}
+
+main .content {
+    flex-grow: 2;
+    padding: 1em;
+}
+
+main .sidebar {
+    flex-grow: 1;
+    margin-left: var(--space);
+    padding: 1em;
+}
+
+footer {
+    justify-content: space-between;
+}
+
+footer .copyright {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    padding-left: 1em;
+}
+
+footer .design {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 1em;
+}
