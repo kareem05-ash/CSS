@@ -1,0 +1,76 @@
+/* Flexible Box
+    1. For Parent -> 
+        - display: flex;        // To Start Flexible Box
+        - flex-direction: row;  // Default Value
+            = flex-direction: row;              // displays parent items in row starting from (default direction of the page)
+            = flex-direction: row-reverse;      // displays parent items in row starting from rigth
+            = flex-direction: column;           // displays parent items in column
+            = flex-direction: column-reverse;   // displays parent items in column starting from down to top
+        - flex-wrap: nowrap;    // Default Value
+            = flex-wrap: nowrap;                // changes the width of parent items to fit the available width from the parent ensuring there is no item will leave the line and wraping to the next line
+            = flex-wrap: wrap;                  // Doesn't changet the width of parent items making the additional item wraping to the next line
+            = flex-wrap: wrap-reverse;          // The as in wrap but the additional item doesn't wrap to the next line, it wraps to the current line moving the current line items to the next line
+        - flex-flow: row nowrap;    // Default value
+            Note: this property is a short-cut to (flex-direction, flex-wrap)
+            = flex-flow: row wrap;              // displays parent items in a row making the additional item/s wrap/s to the next line
+        - justify-content: flex-start;  // Default Value
+            = justify-content: flex-start;      // displays parent items from the start of the page (left to write in case of ltr)
+            = justify-content: flex-end;        // displays parent items from the end of the page
+            = justify-content: center;          // displays parent items in the center of the parent
+            = justify-content: space-between;   // fits the remaining space to spaces between parent items
+            = justify-content: space-around;    // fits the remaining space to spaces before and after each item from parent items
+            = justify-content: space-evenly;    // fits the remaining space to spaces betwee parent items and two additional spaces at flex-start & flex-end
+        - align-items: stretch;     // Default Value
+            = align-items: stretch;             // changes the width of the item to match parent's width
+            = align-items: flex-start;          // parent items display starts from the top          
+            = align-items: flex-end;            // parent items display is relative to the bottom 
+            = align-items: center;              // parent items display is in the center (vertical center)
+        - align-content: stretch;   // Default Value
+            = align-content: stretch;           // parent items are seperated to fill the parent dimensions
+            = align-content: flex-start;        // all parent items (even there are multiple lines) are positioned from the top
+            = align-content: flex-end;          // all parent items (even there are mulitple lines) are positioned from the bottom
+            = align-content: center;            // all parent items are positioned from the center
+            = align-content: space-between;     // divides the virtical remaining space. the top of the first line and the bottom of the last lien havn't space
+            = align-content: spacd-areound;     // divides the vertical remaining space before and after each line
+            = align-content: space-evenly;      // divides the vertical remaining space into spaces in between and at the top & bottom
+    2. For Child -> 
+        - flex-grow: 0;     // Default Value
+            = flex-grow -> Item with higher flex-grow has the priority to grow up in case of there is available space
+        - flex-shrink: 1;   // Default Value
+            = flex-shrink -> Item with higher flex-shring has the priority to shrink down in case of its width isn't too small (In this case all items shrink)
+        - order: 0;         // Default Value
+            = order -> The item with higher order is shown after the item with lower order
+        - flex-basis: -> can take any css unit. It's just like width in case of parent flex-direction: row. It's just like height in case of parent flex-direction: column
+        - flex: [flex-grow] [flex-shrink] [flex-basis]
+            = flex: 1 1 200px;      // flex-grow: 1, flex-shrink: 1, flex-basis: 200px
+            = flex: 100px;          // flex-grow: 1, flex-shrink: 1, flex-basis: 100px
+            = flex: 2 300px;        // flex-grow: 2, flex-shrink: 1, flex-basis: 300px
+        - align-self: auto;     // Default Value
+            = align-self: auto;     // The item will aligned as in parent align-items
+            = align-self: center;   // This aligns the item in the parent center even if parent align-items in anything else (e.g., flex-end, flex-start, ...)
+*/
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Cairo", sans-serif;
+}
+
+.flex {
+    background-color: #eee;
+    width: 800px;
+    display: flex;
+    padding: 10px;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+div {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100px;
+}
