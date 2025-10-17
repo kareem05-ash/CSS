@@ -1,0 +1,82 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Cairo", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Assignment 1 */
+/* 
+div {
+    background-color: #eee;
+    width: 300px;
+    margin: 10px auto;
+    padding: 20px;
+    text-align: center;
+    height: fit-content;
+    border-left: solid 5px orangered;
+    border-right: solid 5px blueviolet;
+    position: relative;
+    font-weight: bolder;
+}
+
+div::first-letter {
+    color: orangered;
+}
+
+div::before,
+div::after {
+    content: '';
+    position: absolute;
+    width: calc(100% + 10px);
+    height: 5px;
+    left: -5px;
+    background-image: linear-gradient(90deg,
+            orangered 20%,
+            #0080ff 20%,
+            #0080ff 40%,
+            green 40%,
+            green 60%,
+            #d64961 60%,
+            #d64961 80%,
+            blueviolet 80%);
+}
+
+div::before {
+    top: -5px;
+}
+
+div::after {
+    bottom: -5px;
+} */
+
+/* Assignment 2 */
+.input-container {
+    position: relative;
+    display: inline-block;
+    width: 600px;
+    margin: 20px auto 0;
+}
+
+input {
+    background-color: #eee;
+    caret-color: red;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    outline: none;
+}
+
+.input-container::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: -2px;
+    background-image: linear-gradient(90deg,
+            #f44336 50%,
+            #00bcd4 50%);
+}
