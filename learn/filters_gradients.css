@@ -1,0 +1,64 @@
+/* Filters
+    - filter: grayscale(100%);        // makes your image black & white image
+    - filter: blur(4px);              // Blurs your image
+    - filter: invert(100%);           // inverts your image colors
+*/
+
+/* Gradient
+    - We can make image by the linear-gradient()
+    - Usually this images is made for backgrounds or borders
+    - background-color: linear-gradient(direction || angle in deg, first color, second color, third color, ..., ..., ..., )
+*/
+
+/* Caret Color & Pointer Events 
+    - caret-color: orangered;         // colors the caret by red
+    - pointer-events: none;           // makes any clickable element (link) non-clickable
+*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* img {
+    transition: 0.3s;
+    filter: grayscale(100%);
+    filter: blur(4px);
+    filter: invert(100%);
+}
+
+img:hover {
+    filter: grayscale(0);
+    filter: blur(0);
+    filter: invert(0);
+} */
+
+div {
+    background-color: #eee;
+    width: 400px;
+    height: fit-content;
+    position: relative;
+    margin: 20px auto;
+    padding: 10px;
+    caret-color: blue;
+}
+
+div:before {
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    top: -5px;
+    left: 0;
+    background-image: linear-gradient(90deg,
+            red 33%,
+            #00bcd4 33%,
+            #00bcd4 67%,
+            green 67%)
+}
+
+a {
+    pointer-events: none;
+}
