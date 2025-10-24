@@ -1,0 +1,285 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fantastic Colors */
+/* #2196f3 close to blue */
+/* #009688 close to green */
+/* #ff5722 close to orangered */
+/* #5c666a close to grey */
+/* #2f3233 close to black */
+/* #ee2469 close to blueviolot */
+
+/* Assignment 1 */
+/* 
+.grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template: auto 1fr / repeat(3, 1fr);
+    gap: 20px;
+}
+
+.grid div:nth-child(1)::before {
+    content: "Element 1";
+}
+
+.grid div:nth-child(2)::before {
+    content: "Element 2";
+}
+
+.grid div:nth-child(3)::before {
+    content: "Element 3";
+}
+
+.grid div:nth-child(4)::before {
+    content: "Element 4";
+}
+
+.grid div:nth-child(5)::before {
+    content: "Element 5";
+}
+
+.grid div:nth-child(6)::before {
+    content: "Element 6";
+}
+
+.grid div::before {
+    color: white;
+    background-color: transparent;
+}
+
+.grid div {
+    background-color: #186280;
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+/* Assignment 2 */
+/* .layout {
+    display: grid;
+    margin: 2vh;
+    height: 66vh;
+    grid-template: 7% 1fr 7% / repeat(12, 1fr);
+    grid-template-areas:
+        "head head head head head head head head head head head head"
+        "sect sect sect sect sect sect sect sect sect side side side"
+        "foot foot foot foot foot foot foot foot foot foot foot foot";
+}
+
+header::before {
+    content: "Header";
+    color: white;
+}
+
+section::before {
+    content: "Section";
+    color: white;
+}
+
+aside::before {
+    content: "Aside";
+    color: white;
+}
+
+footer::before {
+    content: "Footer";
+    color: white;
+}
+
+header {
+    background-color: #03a9f4;
+    padding: 10px;
+    grid-area: head;
+}
+
+section {
+    background-color: #ff5722;
+    padding: 10px;
+    grid-area: sect
+}
+
+aside {
+    background-color: #5c666a;
+    padding: 10px;
+    grid-area: side;
+}
+
+footer {
+    background-color: #009688;
+    padding: 10px;
+    grid-area: foot;
+} */
+
+
+/* Assignment 3 */
+/* .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    display: grid;
+    gap: 20px;
+    grid-template: 1fr auto / auto 1fr 1fr auto;
+}
+
+.grid div {
+    background-color: #2f3233;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+} */
+
+/* Assignment 4 */
+/* .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: fit-content;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.grid div {
+    background-color: #2196f3;
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.grid .div1 {
+    grid-column: 1 / 4;
+}
+
+.grid .div2 {
+    grid-column: 1 / 3;
+}
+
+.grid .div5 {
+    grid-column: 2 / 4;
+    grid-row: 3 / 6;
+}
+
+.grid .div8 {
+    grid-column: 1 / 4;
+} */
+
+/* Assignment 5 */
+/* .grid {
+    background-color: #ddd;
+    padding: 20px;
+    margin: 1rem auto;
+    width: 100%;
+    height: 50vh;
+    display: grid;
+    grid-template: auto auto / 1fr 1fr;
+    align-content: space-between;
+    gap: 20px;
+}
+
+.grid div {
+    background-color: #ee2469;
+    height: fit-content;
+    color: white;
+    text-align: center;
+} */
+
+/* Assignment 6 */
+
+.grid {
+    background-color: #ddd;
+    padding: 20px;
+    margin: auto;
+    width: 65%;
+    display: grid;
+    grid-template: repeat(7, 1fr) / repeat(4, 1fr);
+    gap: 8px;
+}
+
+.grid .card .name {
+    font-weight: bolder;
+    margin-bottom: 0.5em;
+}
+
+.grid .card .jop {
+    color: #b6b6b6;
+    margin-bottom: 0.5em;
+}
+
+.grid .card .desc1 {
+    font-weight: bolder;
+}
+
+.grid .card .desc1,
+.grid .card .desc2 {
+    margin: 1rem 0;
+}
+
+.grid .card {
+    border-bottom: solid 2.5px #ff5722;
+    padding: inherit;
+}
+
+.grid #id-1,
+.grid #id-2,
+.grid #id-4,
+.grid #id-6,
+.grid #id-7,
+.grid #id-9,
+.grid #id-10 {
+    background-color: white;
+}
+
+.grid #id-3,
+.grid #id-5,
+.grid #id-8 {
+    background-color: black;
+    color: white;
+}
+
+.grid #id-1 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+
+.grid #id-2 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+}
+
+.grid #id-3 {
+    grid-column: 4 / 5;
+    grid-row: 1 / 7;
+}
+
+.grid #id-4 {
+    grid-row: 3 / 7;
+    grid-column: 1 / 2;
+}
+
+.grid #id-5 {
+    grid-column: 2 / 4;
+    grid-row: 3 / 5;
+}
+
+.grid #id-6 {
+    grid-column: 2 / 4;
+    grid-row: 5 / 7;
+}
