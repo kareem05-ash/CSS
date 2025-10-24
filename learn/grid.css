@@ -1,0 +1,131 @@
+/* Grid
+    ** Parent Properties **
+        - > display: grid | inline-grid;
+        - > grid-template-columns: [ # columns - width in ] => [ px, %, auto, fraction, repeat(), mix of them all ]
+            = e.g., grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                // The previous line gives your grid dynamic number of columns depending on the available area
+                // The minimum width for the column is 200px
+                // The maximum width for the last column is 1fr (there is no unused area)
+        - > grid-template-rows: [ # rows - height in ] => [ px, %, auto, fraction, repeat(), mix of them all ]
+        - > row-gap: 10px;        // seperate each item in a single row by 10px
+        - > column-gap: 10px;     // seperate each item in a single columns by 10px
+        - > gap: 10px;            // is a short hand for [row-gap, column-gap]
+        - > gap: 10px 20px;       // seperates items in a single row by 10px. seperates items in a single column by 20px
+        - > justify-content: [space-between, space-around, space-evenly, flex-end, flex-start]
+        - > align-content: [space-between, space-around, space-evenly, flex-end, flex-start]
+        - > grid-template-areas: " your first row " " your second row " ... " your nth row "
+            = each row can take number of values is the same as grid-template-columns number
+                * e.g., "logo logo nav nav nav nav ";       // here, area 'logo' takes 2 columns of your parent grid || area 'nav' takes 4 columns of your parent grid
+                * e.g., "cont cont cont cont . side";       // here, area 'cont' takes 4 columns of your parent grid || one column is empty || area 'side' takes 1 column of your parent grid
+    ** Child Properties **
+        -> grid-area: logo;         // this property allows you to name any item in your parent grid to control them in grid-template-areas parent property
+        -> grid-column: [ grid-column-start grid-column-end ]
+            = e.g., grid-column: 2 5;          // this item will start from column 2 and ends at column 4 (exclusive end point)
+                NOTE -> the previous property may distort your grid if your grid has columns less than 4
+            = e.g., grid-column: 1 span 3;     // this item will start from column 1 and spans more 3 columns (ends at column 4)
+            = e.g., grid-column: span 6;       // this item will takes 6 columns
+                NOTE -> the previous property won't distort your grid if your grid has columns less than 6. makes your item go for the second row
+         grid-row: [ grid-row-start grid-row-end ]
+            = The same as in 'gird-column' property       
+        -> grid-area: [grid-row-start] [grid-column-start] [grid-row-end] [grid-column-end]
+
+*/
+
+/* MinMax Function
+    - minmax(minimum value, maximum value)    
+*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* 
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+}
+
+.page {
+    background-color: #eee;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 5% auto 5%;
+    grid-template-areas:
+        "logo logo logo . nav nav nav nav nav nav"
+        "cont cont cont cont cont cont cont . side side"
+        "foot foot foot foot foot foot foot foot foot foot";
+}
+
+h2 {
+    grid-area: logo;
+    background-color: red;
+    color: white;
+}
+
+nav {
+    grid-area: nav;
+    background-color: blue;
+    color: white;
+}
+
+section {
+    grid-area: cont;
+    background-color: black;
+    color: white;
+}
+
+aside {
+    grid-area: side;
+    background-color: orange;
+    color: white;
+}
+
+footer {
+    grid-area: foot;
+    background-color: blueviolet;
+    color: white;
+} */
+
+
+.parent {
+    background-color: #eee;
+    padding: 1rem;
+    margin: 5vh auto;
+    width: 90%;
+    height: 90vh;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+}
+
+.parent div {
+    background-color: red;
+    color: white;
+    padding: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div1 {
+    grid-column: span 4;
+}
+
+.div6 {
+    grid-column: span 2
+}
+
+.div9 {
+    grid-row: span 3
+}
