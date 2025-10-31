@@ -1,0 +1,56 @@
+/* 2D Transformation
+  = Scaling
+    - transform: scaleX(2);           // this stretches the element on X-axis by 2 multiples
+    - transform: scaleY(1.5);         // this stretches the element on Y-axis by 1.5 multiples
+    - transform: scale(2, 1.5);       // this does the same function of the above 2 lines
+    - transform: scale(-1, -2);       // this flips the element around X-axis and flip it around Y-axis after stretching it on Y-axis by 1.5 multiples
+  = Rotation
+    NOTE-> 1turn = 360deg = 6.28rad = 400grad
+    - transform: rotate(90deg);       // this rotates the element by 90 degree (0.25turn) clock-wise
+    - transform: rotate(400grad);     // this rotates the element by 400grad (1turn)
+    - transfomr: rotate(200grads);    // this rotates the element by 200grads (0.5turn & scaling it by 1.5 around [x, y] axes)
+  = We can combine rotation & scaling in one line
+    - transform: scale(1.5) rotate(90deg);
+  = Translation
+  = translate(x, y)
+    - transform: translate(10px);     // this moves the element by 10pxs to the right
+    - transform: translate(-10px);    // this moves the element by 10pxs to the left
+    - transform: translate(50%, -50%);// this moves the element by 50% of its width to the left & 50% of its height to the top
+*/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+}
+
+.page {
+  background-color: #eee;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30vh auto;
+}
+
+.box {
+  background-color: rgb(0, 150, 136, 50%);
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  transform: scale(-1.5);
+  transform: rotate(100grad);
+  transition: 0.5s ease;
+}
